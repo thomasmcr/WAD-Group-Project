@@ -29,21 +29,25 @@ function selectDescription(BMI){
         riskDescription = `This is considered underweight, being underweight can 
         cause a weakened immune system, fragile bones, and chronic tiredness. See our
         diet page for advice on how to increase weight. `;
+        document.getElementById("bmi-result-text").style.color = `red`;
     }
 
     else if(BMI >= 18.5 && BMI <= 24.9){
         riskDescription =`This is considered a healthy weight, you're at decreased risk
         of joint and muscle pain, are likely to have a healthy bloodpressure which reduces burden
         on your heart, decreasing the chank of heart attack and stroke. `;
+        document.getElementById("bmi-result-text").style.color = `green`;
     }
 
     else if(BMI < 30){
         riskDescription =`This is considered overweight, this puts you at an increased risk
         of heart attack and stroke. `;
+        document.getElementById("bmi-result-text").style.color = `orange`;
     }
     else{
         riskDescription=`This is considered obese. You have a 
         greatly increased risk of type 2 diabetes, heart attack and stroke.`
+        document.getElementById("bmi-result-text").style.color = `red`;
     }
     return riskDescription;
 }
