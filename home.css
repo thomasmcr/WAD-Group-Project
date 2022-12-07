@@ -226,6 +226,7 @@ background-color: rgb(202, 255, 244);
 
 .imagelogo{
     height: 12vw;
+    mix-blend-mode: multiply;
 }
 
 .footer_link_items a:hover{
