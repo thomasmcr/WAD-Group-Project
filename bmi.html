@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WAD Group Project</title>
     <link rel="stylesheet" href="bmi.css">
+    <link rel="stylesheet" href="widget.css">
   </head>
   <body>
      <!-- navbar -->
@@ -21,11 +22,23 @@
       </ul>
     </div>
 
-    <!-- BMI form section -->
-    <div id="bmi-wrapper">
-      <div id="bmi-form">
-        <h3>BMI Form</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit dolor</p>
+    <!-- What is BMI?  -->
+    <div id="widget-wrapper"> 
+      <div id="widget-box-highlight">
+        <h3>What is BMI?</h3>
+      </div>
+      <div id="widget-box">
+        <p>BMI or "Body Mass Index" is a measure that is used
+           to figure out if you're a healthy weight based on your height. 
+        </p>
+      </div>
+    </div>
+
+    <!-- BMI widget -->
+    <div id="widget-wrapper"> 
+      <div id="widget-box-highlight">
+        <h3>BMI form</h3>
+        <p>Give us some info and we'll figure out your body mass index. </p>
         <form>
           <input type="text" placeholder="Height (cm)" style="background-color: #FFB100;" id="height">
           <input type="text" placeholder="Weight (Kg)" style="background-color: #ED1E79;" id="weight">
@@ -33,11 +46,79 @@
           <button type="button" id="bmi-form-submit">Submit Results</button>
         </form>
       </div>
-      <div id="bmi-results">
-        <h3 id="bmi-result-text">Your BMI Is: </h3>
+      <div id="widget-box">
+        <h3 id="bmi-result-text">Your BMI is: </h3>
         <p id="bmi-result-breakdown"></p>
       </div>
     </div>
     <script src="bmi.js"></script>
+
+    <!-- Weight in cookies -->
+    <div id="widget-wrapper"> 
+      <div id="widget-box-highlight">
+        <h3>How much do you weigh in cookies?</h3>
+      </div>
+      <div id="widget-box">
+        <h3>Result: </h3>
+        <p id="weight-in-cookies"></p>
+      </div>
+    </div>
+
+      <!-- Weight in neutrons -->
+      <div id="widget-wrapper"> 
+        <div id="widget-box-highlight">
+          <h3>How many neutrons do you weigh?</h3>
+        </div>
+        <div id="widget-box">
+          <h3>Result: </h3>
+          <p id="weight-in-neutrons"></p>
+        </div>
+      </div>
+
+        <!-- Weight in apples -->
+        <div id="widget-wrapper"> 
+          <div id="widget-box-highlight">
+            <h3>How many moons do you weigh?</h3>
+          </div>
+          <div id="widget-box">
+            <h3>Result: </h3>
+            <p id="weight-in-apples"></p>
+          </div>
+        </div>
+
+
+    <script src="bmi.js"></script>
+
+    <!-- Footer -->
+    <div class="footer_container">
+      <div class="footer_links">
+          <div class="footer_link_wrapper">
+              <div class="footer_link_items">
+                  <img src="images\logo_solo.png" class="imagelogo" height="30px" alt="image">
+              </div>
+              <div class="footer_link_items">
+                  <h2>Credit</h2>
+                  <a href="/sign_up">website</a>
+                  <a href="/sign_up">website</a>
+                  <a href="/sign_up">website</a>
+                  <a href="/sign_up">website</a>
+              </div>
+              <div class="footer_link_items">
+                  <h2>Support</h2>
+                  <a href="/sign_up">Getting started</a>
+                  <a href="/sign_up">Help center</a>
+                  <a href="/sign_up">Report a bug</a>
+                  <a href="/sign_up">Chat support</a>
+              </div>
+              <div class="footer_link_items">
+                  <h2>Contact Us</h2>
+                  <a href="/sign_up">email@email.com</a>
+                  <a href="/sign_up">07689456376</a>
+                  <a href="/sign_up">Australia</a>
+                  <a href="/sign_up">terms of service</a>
+              </div>
+          </div>
+      </div>
+      <p class="website_rights">C color 2022. All rights reserved</p>
   </body>
 </html>
