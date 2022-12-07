@@ -11,7 +11,7 @@ console.log(amount);
 
 
 // const numberOfImages = document.querySelectorAll("img")
-const numberOfImages = [0, 0,0,0,0,0,0];
+const numberOfImages = [0,0,0,0,0];
 console.log(numberOfImages);
 
 const imageContainerE1 = document.querySelector('.image-Container')
