@@ -34,8 +34,8 @@ function selectDescription(BMI){
 
     else if(BMI >= 18.5 && BMI <= 24.9){
         riskDescription =`This is considered a healthy weight, you're at decreased risk
-        of joint and muscle pain, are likely to have a healthy bloodpressure which reduces burden
-        on your heart, decreasing the chank of heart attack and stroke. `;
+        of joint and muscle pain, are likely to have a healthy blood pressure which reduces burden
+        on your heart, decreasing the chance of heart attack and stroke. `;
         document.getElementById("bmi-result-text").style.color = `green`;
     }
 
