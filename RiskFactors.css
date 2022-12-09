@@ -67,7 +67,8 @@ h1{
 }
 
 .main_holder{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-around;
 
@@ -113,7 +114,19 @@ h1{
 
 
 
+@media screen and (max-width:760px){
+    .main_holder{
+        grid-template-columns: 1fr;
+    }
 
+    .right_text{
+        width: 80vw;
+    }
+
+    .left_text{
+        width: 80vw;
+    }
+}
 
 
 
