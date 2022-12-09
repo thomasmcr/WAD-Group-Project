@@ -12,14 +12,12 @@ body{
 
 /* footer section */
 .footer_container{
-background-color: rgb(202, 255, 244);
-
+    background-color: rgb(202, 255, 244);
 }
 .footer_link_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 20px;
-    
 }
 
 .footer_link_items{
@@ -33,7 +31,6 @@ background-color: rgb(202, 255, 244);
 .footer_link_items a{
     text-decoration: none;
     padding: 5px;
-
 }
 
 .imagelogo{
@@ -47,7 +44,6 @@ background-color: rgb(202, 255, 244);
     position: relative;
     bottom: 1.5px;
     transition: all 0.3s;
-
 }
 
 /* Content section */
@@ -55,13 +51,7 @@ background-color: rgb(202, 255, 244);
     margin-top: 250px;
 }
 
-
 /* Title section */
-*:not(.navbar *){
-    margin: 0;
-    padding: 0;
-}
-
 .col{
     width: 90%;
     color: black;
