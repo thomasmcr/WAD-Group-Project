@@ -29,7 +29,11 @@
     text-align: left;
     padding: 2px;
     width: 50%;
- }
+}
+
+#widget-box-highlight button{
+    border-radius: 35px;
+}
 
 #widget-box-highlight p{
     font-weight: lighter;

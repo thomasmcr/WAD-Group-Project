@@ -1,4 +1,23 @@
+
+var height;
+var weight;
+var age; 
+
 document.getElementById("bmi-form-submit").addEventListener("click", ()=>{
+    height = document.getElementById("height").value;
+    weight = document.getElementById("weight").value;
+    age = document.getElementById("age").value;
+
+    const heightEmpty = !height.trim().length;
+    const weightEmpty = !weight.trim().length;
+    const ageEmpty = !age.trim().length;
+    
+    if(heightEmpty || weightEmpty || ageEmpty){
+        return;
+    }
+
+
+
     calculateBMI();
     calculateWeightInCookies();
     calculateWeightInNeutrons();
@@ -6,11 +25,6 @@ document.getElementById("bmi-form-submit").addEventListener("click", ()=>{
 })
 
 function calculateBMI(){
-    //Get height, weight and age from the form
-    const height = document.getElementById("height").value;
-    const weight = document.getElementById("weight").value;
-    const age = document.getElementById("age").value;
-   
     //Calculate BMI 
     let heightMeters = height / 100;
     let heightMetersSquared = heightMeters * heightMeters;
