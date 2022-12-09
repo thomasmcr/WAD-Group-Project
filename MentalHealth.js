@@ -61,3 +61,5 @@ function updateImage(){
         updateImage()
     }, 3000)
 }
+
+

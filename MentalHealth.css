@@ -1,4 +1,4 @@
-*{
+*:not(.navbar *){
     margin: 0;
     padding: 0;
 }
@@ -92,6 +92,5 @@
     opacity: 1;
     cursor: pointer;
 }
-
 
 
