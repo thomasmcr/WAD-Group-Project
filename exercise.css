@@ -1,7 +1,18 @@
+
+*:not(.navbar *){
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(237, 255, 251);
+    font-family: 'Inter'; 
+    font-size: 30px;
+}
+
 /* footer section */
 .footer_container{
 background-color: rgb(202, 255, 244);
-margin-top: 200px;
 
 }
 .footer_link_wrapper{
@@ -36,8 +47,31 @@ margin-top: 200px;
     position: relative;
     bottom: 1.5px;
     transition: all 0.3s;
+
 }
 
+/* Content section */
 #content{
-    margin-top: 100px;
+    margin-top: 250px;
+}
+
+
+/* Title section */
+*:not(.navbar *){
+    margin: 0;
+    padding: 0;
+}
+
+.col{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.col img{
+    margin-right: 11cm;
 }

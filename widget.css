@@ -33,6 +33,7 @@
 
 #widget-box-highlight button{
     border-radius: 35px;
+    cursor: pointer;
 }
 
 #widget-box-highlight p{
