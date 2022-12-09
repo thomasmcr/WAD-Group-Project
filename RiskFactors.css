@@ -6,6 +6,7 @@ body{
 
 
 
+
 .navbar{
     display: flex;
     position: fixed;
@@ -49,7 +50,10 @@ body{
 }
 
 
-.rftitle h1{
+
+    
+
+h1{
     display: flex;
     align-items: center;
     justify-content: center;
