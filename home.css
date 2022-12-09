@@ -4,53 +4,6 @@ body{
     font-size: 30px;
 }
 
-
-
-.navbar{
-    display: flex;
-    position: fixed;
-    background-color:aliceblue;
-    width: 100%;
-    top: 0%;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    z-index: 999999;
-    padding-left: 30px;
-}
-
-
-.navbar ul{
-    display: flex;
-    list-style: none;
-    padding-right: 60px;
-    
-}
-
-.navbar ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    padding: 2px;
-    margin: 0 10px;
-    color: black;
-    
-}
-
-.navbar ul li a:hover{
-    color: rgb(192, 0, 0);
-    position: relative;
-    bottom: 1.5px;
-    scale: 1.1;
-    transition: all 0.3s;
-
-}
-
-
-
-
 /* main picture */
 .main_pic{
     padding-top: 105px;
@@ -226,6 +179,7 @@ background-color: rgb(202, 255, 244);
 
 .imagelogo{
     height: 12vw;
+    mix-blend-mode: multiply;
 }
 
 .footer_link_items a:hover{
