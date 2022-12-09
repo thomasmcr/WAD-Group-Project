@@ -1,4 +1,27 @@
-document.getElementById("bmi-form-submit").addEventListener("click", ()=>{
+
+var height;
+var weight;
+var age; 
+
+const BMIBreakdown = document.getElementById("bmi-result-breakdown");
+const BMIResult = document.getElementById("bmi-result-text");
+const BMISubmitButton = document.getElementById("bmi-form-submit");
+
+BMISubmitButton.addEventListener("click", ()=>{
+    height = document.getElementById("height").value;
+    weight = document.getElementById("weight").value;
+    age = document.getElementById("age").value;
+
+    const heightEmpty = !height.trim().length;
+    const weightEmpty = !weight.trim().length;
+    const ageEmpty = !age.trim().length;
+    
+    if(heightEmpty || weightEmpty || ageEmpty){
+
+        BMIBreakdown.textContent = `Please fill out each text box`;
+        return;
+    }
+
     calculateBMI();
     calculateWeightInCookies();
     calculateWeightInNeutrons();
@@ -6,11 +29,6 @@ document.getElementById("bmi-form-submit").addEventListener("click", ()=>{
 })
 
 function calculateBMI(){
-    //Get height, weight and age from the form
-    const height = document.getElementById("height").value;
-    const weight = document.getElementById("weight").value;
-    const age = document.getElementById("age").value;
-   
     //Calculate BMI 
     let heightMeters = height / 100;
     let heightMetersSquared = heightMeters * heightMeters;
@@ -18,8 +36,8 @@ function calculateBMI(){
     BMI = Math.round(BMI * 10) / 10;
 
     //Update Text in the HTML document
-    document.getElementById("bmi-result-text").textContent = `Your BMI: ${BMI}`;
-    document.getElementById("bmi-result-breakdown").textContent = `Your current BMI is
+    BMIResult.textContent = `Your BMI: ${BMI}`;
+    BMIBreakdown.textContent = `Your current BMI is
     ${BMI}. ${selectDescription(BMI)}`;
 }
 
@@ -29,25 +47,25 @@ function selectDescription(BMI){
         riskDescription = `This is considered underweight, being underweight can 
         cause a weakened immune system, fragile bones, and chronic tiredness. See our
         diet page for advice on how to increase weight. `;
-        document.getElementById("bmi-result-text").style.color = `red`;
+        BMIResult.style.color = `red`;
     }
 
     else if(BMI >= 18.5 && BMI <= 24.9){
         riskDescription =`This is considered a healthy weight, you're at decreased risk
         of joint and muscle pain, are likely to have a healthy blood pressure which reduces burden
         on your heart, decreasing the chance of heart attack and stroke. `;
-        document.getElementById("bmi-result-text").style.color = `green`;
+        BMIResult.style.color = `green`;
     }
 
     else if(BMI < 30){
         riskDescription =`This is considered overweight, this puts you at an increased risk
         of heart attack and stroke. `;
-        document.getElementById("bmi-result-text").style.color = `orange`;
+        BMIResult.style.color = `orange`;
     }
     else{
         riskDescription=`This is considered obese. You have a 
         greatly increased risk of type 2 diabetes, heart attack and stroke.`
-        document.getElementById("bmi-result-text").style.color = `red`;
+        BMIResult.style.color = `red`;
     }
     return riskDescription;
 }
