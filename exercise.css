@@ -10,6 +10,18 @@ body{
     margin-top: 250px;
 }
 
+#content #widget-wrapper{
+    padding: 20px;
+}
+
+#content #widget-wrapper #widget-box{
+    text-align: center;
+    list-style-position: inside;
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 35px;
+}
+
 /* Title section */
 .col{
     width: 90%;
@@ -24,3 +36,5 @@ body{
 .col img{
     margin-right: 11cm;
 }
+
+
