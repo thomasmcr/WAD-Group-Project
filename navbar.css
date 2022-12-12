@@ -70,7 +70,6 @@ label{
     
 .mobile-navbar ul li{
     padding: 10px;
-    background: aliceblue;
 }
 
 .mobile-navbar ul li a{
@@ -107,14 +106,13 @@ input[type="checkbox"]:checked ~ ul{
     transform: scaleY(1); 
 }
 
-  
-/* This css will be applied when we're on a mobile device*/
+/* Enables the mobile navbar when the screen is less than 900px */
 @media screen and (max-width: 900px) {
    .navbar{
         display: none;
    }
 
    .mobile-navbar{
-        display: flex;
+        display: inline-block;
     }
 }
