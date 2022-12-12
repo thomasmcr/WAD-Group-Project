@@ -1,3 +1,9 @@
+body{
+    background-color: rgb(237, 255, 251);
+    font-family: 'Inter'; 
+    font-size: 30px;
+}
+
 /* footer section */
 .footer_container{
     background-color: rgb(202, 255, 244);
@@ -34,11 +40,6 @@
     transition: all 0.3s;
 }
 
-body{
-    background-color: rgb(237, 255, 251);
-    font-family: 'Inter'; 
-    font-size: 30px;
-}
 
     
     

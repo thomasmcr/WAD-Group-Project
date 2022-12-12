@@ -1,4 +1,8 @@
 /* Navbar */
+body{
+    margin: 0px;
+}
+
 .navbar{
     display: flex;
     position: fixed;
@@ -48,8 +52,8 @@
     z-index: 1;
     position: fixed;
     top: 0;
-    width: 100%;
     background-color: aliceblue;
+    width: 100%;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -94,14 +98,12 @@ input[type="checkbox"]{
   
 input[type="checkbox"] ~ ul{
     height: 0;
-    transition: transform .2s ease-out;
     transform: scaleY(0);
 }
   
 input[type="checkbox"]:checked ~ ul{
     height: 100%;
     transform-origin: top;
-    transition: transform .2s ease-out;
     transform: scaleY(1); 
 }
 
