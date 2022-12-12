@@ -11,10 +11,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 30px;
 }
 
 .col img{
-    margin-right: 11cm;
+    margin-right: 9cm;
 }
 
 /*Slider*/
@@ -40,7 +41,7 @@
     position: relative;
     width: 70vw;
     height: 35vw;
-    max-height: 1000px;
+    max-height: 1000vw;
     
     overflow: hidden;
     border-radius: 10px;
@@ -51,14 +52,14 @@
 .slider-Container img{
     width: 70vw;
     height: 35vw;
-    max-height: 1000px;
+    max-height: 1000vw;
 }
 
 .image-Container{
     display: flex;
     transform: translateX(0px);
     transition: transform 0.4s ease-in-out;
-    max-height: 1000px;
+    max-height: 1000vw;
 }
 
 
@@ -198,4 +199,5 @@
         text-align: center;
         font-size: 20px;
     }
+    
 }
