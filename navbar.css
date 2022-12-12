@@ -108,7 +108,7 @@ input[type="checkbox"]:checked ~ ul{
 }
 
 /* Enables the mobile navbar when the screen is less than 900px */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1070px) {
    .navbar{
         display: none;
    }
