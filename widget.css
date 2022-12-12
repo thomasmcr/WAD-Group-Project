@@ -5,8 +5,9 @@ body{
     font-size: 22px;
 }
 
+/* to-do, transition to the use of classes rather than id's */
 /* Widget Styling, the BMI form is an example of a widget box */
-#widget-wrapper{
+.widget-wrapper{
     display: flex;
     flex-direction: row;
     margin: 20px;
@@ -20,16 +21,23 @@ body{
     overflow: hidden;
 }
 
-#widget-box-highlight{ 
-   width: 50%;
-   border: 3px solid #3A8EF6;
-   border-radius: 35px;
-   background: linear-gradient(-30deg, #EFEFEF, #BBBBBB);
-   padding: 10px;
-   overflow: hidden;
+.widget-box{ 
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
 }
 
-#widget-box-highlight form input{ 
+.widget-box p{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.widget-box button{
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.widget-box form input{ 
     border: none;
     border-radius: 35px;
     text-align: left;
@@ -37,26 +45,11 @@ body{
     width: 50%;
 }
 
-#widget-box-highlight button{
+.highlight{
+    border: 3px solid #3A8EF6;
     border-radius: 35px;
-    cursor: pointer;
+    background: linear-gradient(-30deg, #EFEFEF, #BBBBBB);
 }
-
-#widget-box-highlight p{
-    font-weight: lighter;
-    font-size: 20px;
- }
-
-#widget-box{ 
-    width: 50%;
-    padding: 10px;
-    overflow: hidden;
-}
-
-#widget-box p{
-    font-weight: lighter;
-    font-size: 20px;
- }
 
  /* This css will be applied when we're on a mobile device*/
 @media screen and (max-width: 540px) {

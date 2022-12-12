@@ -10,7 +10,7 @@ body{
     margin-top: 200px;
 }
 
-#content #widget-wrapper{
+#content .widget-wrapper{
     padding: 10px;
     background-color: transparent;
     background-image: none;
@@ -18,14 +18,14 @@ body{
     box-shadow: none;
 }
 
-#content #widget-wrapper #widget-box{
+#content .widget-wrapper .widget-box{
     text-align: center;
     list-style-position: inside;
     margin: 10px;
     border-radius: 35px;
 }
 
-#content #widget-wrapper #widget-box ul li{
+#content .widget-wrapper .widget-box ul li{
     padding-top: 30px;
 }
 

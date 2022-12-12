@@ -22,7 +22,7 @@ BMISubmitButton.addEventListener("click", ()=>{
     }
 
     calculateBMI();
-    calculateWeightInCookies();
+    calculateWeightInBiscuits();
     calculateWeightInNeutrons();
     calculateWeightInApples();
 })
@@ -71,10 +71,10 @@ function selectDescription(BMI){
 }
 
 
-function calculateWeightInCookies(){
-    const cookieWeight = 0.016;
-    const weightInCookies = weight / cookieWeight;
-    document.getElementById("weight-in-cookies").textContent = `You Weigh ${weightInCookies} cookies`;
+function calculateWeightInBiscuits(){
+    const biscuitWeight = 0.016;
+    const weightInBiscuits = weight / biscuitWeight;
+    document.getElementById("weight-in-cookies").textContent = `You Weigh ${weightInBiscuits} biscuits`;
 }
 
 function calculateWeightInNeutrons(){
