@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     background-color: rgb(237, 255, 251);
-    font-family: 'Inter'; 
     font-size: 30px;
 }
 
@@ -12,7 +16,6 @@ body{
 
 .title1 h1{
     padding-top: 80px;
-    
 }
 
 /* main picture */
@@ -21,7 +24,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .image1{
@@ -32,40 +34,28 @@ body{
 }
 
 
-
 /* text section */
-
 .informative_text{
     margin: 30px;
 }
 
-
 .informative_text h2{
     text-align: center;
-    
     font-size: 40px;
-
 }
 
-
-
 .informative_text p{
-    text-align: center;
-    
-        
+    text-align: center;     
 }
 
 /* slider section */
-
 .ttxt{
     text-align: center;
-    color: rgb(0, 0, 0);
-    
+    color: rgb(0, 0, 0); 
     padding-top: 50px;
 }
 
 .holder{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,17 +63,15 @@ body{
 }
 
 .slider-Container{
-
     position: relative;
     width: 70vw;
     height: 35vw;
     max-height: 1000px;
-    
+
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 
 .slider-Container img{
     width: 70vw;
@@ -98,7 +86,6 @@ body{
     max-height: 1000px;
 }
 
-
 .btn{
     position: absolute;
     top: 50%;
@@ -111,8 +98,6 @@ body{
 
 }
 
-
-
 .btn.prev{
     left: 10px;
     transform: scale(-1, 2);
@@ -122,14 +107,12 @@ body{
     right: 10px;
 }
 
-
 .btn:hover{
     opacity: 1;
     cursor: pointer;
 }
 
 /* phone number entry section */
-
 .number{
     border-radius: 25px;
     width: 260px;
@@ -153,9 +136,7 @@ body{
 
 .username{
     background-color: rgb(221, 184, 255);
-    
     width: 190px;
     outline: none;
     box-shadow: none;
-    
 }

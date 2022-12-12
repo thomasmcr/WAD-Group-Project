@@ -1,8 +1,13 @@
-/* Navbar */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     margin: 0px;
 }
 
+/* Navbar */
 .navbar{
     display: flex;
     position: fixed;
@@ -32,7 +37,6 @@ body{
     padding: 2px;
     margin: 0 10px;
     color: black;
-    font-family: 'Inter'; 
 }
 
 .navbar ul li a:hover{
@@ -74,7 +78,6 @@ label{
 
 .mobile-navbar ul li a{
     color: black;
-    font-family: 'Inter';
     font-weight: bold;
 }
 

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 body{
     background-color: rgb(237, 255, 251);
-    font-family: 'Inter'; 
     font-size: 30px;
 }
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 
 

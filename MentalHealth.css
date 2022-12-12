@@ -3,9 +3,12 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Inter';
+}
+
 .col{
     width: 90%;
-    color: black;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -21,7 +24,7 @@
 
 .ttxt{
     text-align: center;
-    color: rgb(0, 0, 0);
+    background-color: red;
     padding-top: 50px;
 }
 

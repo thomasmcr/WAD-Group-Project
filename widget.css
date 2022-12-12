@@ -1,5 +1,9 @@
-/* Widget Styling, the BMI form is an example of a widget box */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Widget Styling, the BMI form is an example of a widget box */
 #widget-wrapper{
     display: flex;
     flex-direction: row;
