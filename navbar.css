@@ -39,6 +39,10 @@
 }
 
 /* Mobile Navbar */
+.first{
+    margin-left: 10px;
+}
+
 .mobile-navbar{
     display: none;
     z-index: 1;
@@ -63,6 +67,12 @@ label{
 .mobile-navbar ul li{
     padding: 10px;
     background: aliceblue;
+}
+
+.mobile-navbar ul li a{
+    color: black;
+    font-family: 'Inter';
+    font-weight: bold;
 }
 
 .mobile-navbar ul li a:hover{
