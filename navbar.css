@@ -109,7 +109,7 @@ input[type="checkbox"]:checked ~ ul{
 
   
 /* This css will be applied when we're on a mobile device*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
    .navbar{
         display: none;
    }
