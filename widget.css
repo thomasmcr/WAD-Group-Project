@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
-*{
+body{
     font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 22px;
 }
 
 /* Widget Styling, the BMI form is an example of a widget box */
