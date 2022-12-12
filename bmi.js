@@ -1,4 +1,3 @@
-
 var height;
 var weight;
 var age; 
@@ -7,6 +6,7 @@ const BMIBreakdown = document.getElementById("bmi-result-breakdown");
 const BMIResult = document.getElementById("bmi-result-text");
 const BMISubmitButton = document.getElementById("bmi-form-submit");
 
+//Function is called every time the submit button is clicked 
 BMISubmitButton.addEventListener("click", ()=>{
     height = document.getElementById("height").value;
     weight = document.getElementById("weight").value;
@@ -40,6 +40,7 @@ function calculateBMI(){
     ${BMI}. ${selectDescription(BMI)}`;
 }
 
+//Select the appropriate description for the given BMI
 function selectDescription(BMI){
     let riskDescription = ""
     if(BMI < 18.5){
@@ -69,22 +70,20 @@ function selectDescription(BMI){
     return riskDescription;
 }
 
+
 function calculateWeightInCookies(){
-    const weight = document.getElementById("weight").value;
     const cookieWeight = 0.016;
-    let weightInCookies = weight / cookieWeight;
+    const weightInCookies = weight / cookieWeight;
     document.getElementById("weight-in-cookies").textContent = `You Weigh ${weightInCookies} cookies`;
 }
 
 function calculateWeightInNeutrons(){
-    const weight = document.getElementById("weight").value;
     const neutronWeight = 1.67 * Math.pow(10,-27);
     const weightInNeutrons = weight / neutronWeight;
     document.getElementById("weight-in-neutrons").textContent = `You Weigh ${weightInNeutrons} neutrons`;
 }
 
 function calculateWeightInApples(){
-    const weight = document.getElementById("weight").value;
     const appleWeight = 0.25;
     const weightInApples = weight / appleWeight;
     document.getElementById("weight-in-apples").textContent = `You Weigh ${weightInApples} apples`;
