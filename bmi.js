@@ -17,7 +17,6 @@ BMISubmitButton.addEventListener("click", ()=>{
     const ageEmpty = !age.trim().length;
     
     if(heightEmpty || weightEmpty || ageEmpty){
-
         BMIBreakdown.textContent = `Please fill out each text box`;
         return;
     }

@@ -52,3 +52,11 @@
     font-size: 20px;
  }
 
+ /* This css will be applied when we're on a mobile device*/
+@media screen and (max-width: 540px) {
+    #widget-wrapper{
+        top: 0px;
+    }
+ }
+ 
+
