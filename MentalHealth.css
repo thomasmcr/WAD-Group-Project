@@ -126,7 +126,7 @@
 
 .blog-img{
     width: 100%;
-    height: auto;
+    height: auto
 }
 
 .blog-img img{
@@ -134,4 +134,55 @@
     height: 100%;
     object-fit: cover;
     object-position: center;  
+}
+
+.blog-txt{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-txt span{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.blog-txt .blog-title{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+.blog-txt .blog-title:hover{
+    color: rgb(192, 0, 0);
+    transition: all ease 0.3s;
+}
+
+.blog-txt p{
+    font-size: 1.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.blog-txt a{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.blog-txt a:hover{
+    color: rgb(192, 0, 0);
+    transition: all ease 0.3s;
+}
+
+@media(max-width:1250px){
+    .blog-container{
+        width: 300px;
+    }
 }
