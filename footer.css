@@ -5,7 +5,6 @@
     overflow: hidden;
 }
 
-
 .footer_link_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
