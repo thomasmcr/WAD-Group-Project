@@ -18,6 +18,12 @@ body{
     z-index: 999999;
     padding-left: 30px;
     font-size: 25px;
+    /* Prevents users from being able to highlight navbar text*/
+    user-select: none; 
+}
+/* Prevents ghost image appearing if user clicks and drags */ 
+.navbar img{
+    -webkit-user-drag: none;
 }
 
 .navbar ul{
