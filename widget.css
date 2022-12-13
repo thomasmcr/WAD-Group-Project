@@ -54,12 +54,12 @@ body{
  
 /* Transitions widgets to align vertically for mobile devices */
 @media screen and (max-width: 1070px) {
-    .widget-box{
-        width: 90%;
+    .widget-wrapper{
+        flex-flow: column;
+        align-items: middle;
     }
 
-    .widget-wrapper{
-        align-items: center;
-        flex-flow: column;
+    .widget-box{
+        width: auto;
     }
  }
