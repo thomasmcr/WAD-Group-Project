@@ -4,9 +4,6 @@ body{
     font-size: 30px;
 }
 
-
-
-
 .navbar{
     display: flex;
     position: fixed;
@@ -19,7 +16,6 @@ body{
     z-index: 999999;
     padding-left: 30px;
 }
-
 
 .navbar ul{
     display: flex;
@@ -49,7 +45,6 @@ body{
 
 }
 
-
 .rftitle{
     display: flex;
     align-items: center;
@@ -69,6 +64,7 @@ h1{
 .main_holder{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 4vw;
     align-items: center;
     justify-content: space-around;
 
@@ -76,14 +72,26 @@ h1{
 
 .top_part{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
 }
 
 .bottom_part{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
 }
 
 .b_part{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
 }
 
 
@@ -94,6 +102,10 @@ h1{
     justify-content: center;
     background-color: rgb(223, 223, 223);
     border-radius: 30px;
+    border: 2px solid black;
+    outline: 2px solid rgb(145, 145, 145);
+    outline-style: dashed;
+    outline-offset: -8px;
 }
 
 .right_text{
@@ -103,20 +115,25 @@ h1{
     justify-content: center;
     background-color: rgb(223, 223, 223);
     border-radius: 30px;
+    border: 2px solid black;
+    outline: 2px solid rgb(145, 145, 145);
+    outline-style: dashed;
+    outline-offset: -8px;
 }
 
+.right_text h2{
+    text-align: center;
+}
 
 .imagelogo{
     width: 17vw;
 }
 
-
-
-
-
 @media screen and (max-width:760px){
     .main_holder{
         grid-template-columns: 1fr;
+        row-gap: 10px;
+        padding-left: 4vw;
     }
 
     .right_text{
@@ -127,66 +144,3 @@ h1{
         width: 80vw;
     }
 }
-
-
-
-
-
-
-
-
-
-/* footer section */
-.footer_container{
-    background-color: rgb(202, 255, 244);
-    
-    }
-    .footer_link_wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 20px;
-        
-    }
-    
-    .footer_link_items{
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    
-    .footer_link_items a{
-        text-decoration: none;
-        padding: 5px;
-    
-    }
-    
-    .imagelogo{
-        height: 12vw;
-        mix-blend-mode: multiply;
-    }
-    
-    .footer_link_items a:hover{
-        color: rgb(192, 0, 0);
-        scale: 1.1;
-        position: relative;
-        bottom: 1.5px;
-        transition: all 0.3s;
-    
-    }
-    
-    
-    
-    
-    @media screen and (max-width:850px){
-        .footer_link_wrapper{
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    
-    @media screen and (max-width:550px){
-        .footer_link_wrapper{
-            grid-template-columns: 1fr;
-        }
-    }

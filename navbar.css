@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 0px;
+}
+
 /* Navbar */
 .navbar{
     display: flex;
@@ -11,6 +18,12 @@
     z-index: 999999;
     padding-left: 30px;
     font-size: 25px;
+    /* Prevents users from being able to highlight navbar text*/
+    user-select: none; 
+}
+/* Prevents ghost image appearing if user clicks and drags */ 
+.navbar img{
+    -webkit-user-drag: none;
 }
 
 .navbar ul{
@@ -28,7 +41,6 @@
     padding: 2px;
     margin: 0 10px;
     color: black;
-    font-family: 'Inter'; 
 }
 
 .navbar ul li a:hover{
@@ -38,3 +50,76 @@
     transition: all 0.3s;
 }
 
+/* Mobile Navbar */
+.first{
+    margin-left: 10px;
+}
+
+.mobile-navbar{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+  
+.mobile-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+label{
+    cursor: pointer;
+}
+    
+.mobile-navbar ul li{
+    padding: 10px;
+}
+
+.mobile-navbar ul li a{
+    color: black;
+    font-weight: bold;
+}
+
+.mobile-navbar ul li a:hover{
+    color: rgb(192, 0, 0);
+    position: relative;
+    bottom: 1.5px;
+    transition: all 0.3s;
+}
+
+.mobile-navbar ul li a{
+    text-decoration: none;
+}
+  
+  
+input[type="checkbox"]{
+    position: absolute;
+    left: -9999px;
+}
+  
+input[type="checkbox"] ~ ul{
+    height: 0;
+    transform: scaleY(0);
+}
+  
+input[type="checkbox"]:checked ~ ul{
+    height: 100%;
+    transform-origin: top;
+    transform: scaleY(1); 
+}
+
+/* Enables the mobile navbar when the screen is less than 900px */
+@media screen and (max-width: 1070px) {
+   .navbar{
+        display: none;
+   }
+
+   .mobile-navbar{
+        display: inline-block;
+    }
+}

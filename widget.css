@@ -1,6 +1,13 @@
-/* Widget Styling, the BMI form is an example of a widget box */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 22px;
+}
 
-#widget-wrapper{
+/* to-do, transition to the use of classes rather than id's */
+/* Widget Styling, the BMI form is an example of a widget box */
+.widget-wrapper{
     display: flex;
     flex-direction: row;
     margin: 20px;
@@ -14,16 +21,23 @@
     overflow: hidden;
 }
 
-#widget-box-highlight{ 
-   width: 50%;
-   border: 3px solid #3A8EF6;
-   border-radius: 35px;
-   background: linear-gradient(-30deg, #EFEFEF, #BBBBBB);
-   padding: 10px;
-   overflow: hidden;
+.widget-box{ 
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
 }
 
-#widget-box-highlight form input{ 
+.widget-box p{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.widget-box button{
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.widget-box form input{ 
     border: none;
     border-radius: 35px;
     text-align: left;
@@ -31,23 +45,21 @@
     width: 50%;
 }
 
-#widget-box-highlight button{
+.highlight{
+    border: 3px solid #3A8EF6;
     border-radius: 35px;
+    background: linear-gradient(-30deg, #EFEFEF, #BBBBBB);
 }
 
-#widget-box-highlight p{
-    font-weight: lighter;
-    font-size: 20px;
+ 
+/* Transitions widgets to align vertically for mobile devices */
+@media screen and (max-width: 1070px) {
+    .widget-wrapper{
+        flex-flow: column;
+        align-items: middle;
+    }
+
+    .widget-box{
+        width: auto;
+    }
  }
-
-#widget-box{ 
-    width: 50%;
-    padding: 10px;
-    overflow: hidden;
-}
-
-#widget-box p{
-    font-weight: lighter;
-    font-size: 20px;
- }
-

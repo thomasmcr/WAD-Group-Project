@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="exercise.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="widget.css">
 </head>
 <body>
     <!-- navbar -->
@@ -24,8 +25,8 @@
         </ul>
     </div>
 
-    <!-- Mobile navbar-->
-    <div class="mobile-navbar">
+     <!-- Mobile navbar-->
+     <div class="mobile-navbar">
         <input type="checkbox" id="list-item-1">
         <a href="index.html" id="navbar-logo"><img src="images\mobile-logo.png" height="40px"></a>
         <label for="list-item-1" class="first"><img src="images\hamburger-icon.png" height="40px"></label>
@@ -39,57 +40,57 @@
         </ul>
     </div>  
 
-    <!-- <h1>fkjdsnv/s</h1> -->
-    <div class="title1">
-        <h1>Healthy Living</h1>
+    <!-- Main page content -->
+    <div id="content">
+        
+     <!-- Title -->
+     <div class="title">
+        <div class="row">
+            <div class="col">
+                <img src="images/exercise.png" width="80px" alt="image"/>
+            </div>    
+            <div class="col">
+                <h1>Exercise</h1>
+            </div>    
+        </div>
     </div>
-
-    <!-- image section -->
-    <div class="main_pic">
-        <img src="images\couple.jfif" class="image1" alt="image">
-
-    </div>
-
-
-    <!-- text section -->
-    <div class="informative_text">
-        <h2>Why Health Matters</h2>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-    </div>
-
-    <!-- slider section -->
-    <div class="ttxt"><h2>Enhance Your Mindset</h2></div>
-    <div class="holder">
-        <div class="slider-Container">
-            <div class="image-Container">
-                <!-- pictures for slider -->
-                <img src="images\Picture1.png" alt="image">
-                <img src="images\Picture2.png" alt="image">
-                <img src="images\Picture3 (2).jpg" alt="image">
-                <img src="images\Picture4.jpg" alt="image">
-                <img src="images\Picture5.jpg" alt="image">
-                <img src="images\Picture6.jpg" alt="image">
-                <img src="images\Picture7.jpg" alt="image">
-
-
+        <div class="widget-wrapper">
+            <div class="widget-box" style="background-color: #f1cfcf;">
+                <h3>Benefits of exercise</h3>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
             </div>
-            <a  class="btn prev">→</a>
-            <a  class="btn next">→</a>
+            <div class="widget-box" style="background-color: #CFE3F1;">
+                <h3>Exercises at home</h3>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+            </div>
+            <div class="widget-box" style="background-color: #CFF1ED;">
+                <h3>Group Exercise</h3>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+            </div>
+            <div class="widget-box" style="background-color: #F1F0CF;">
+                <h3>Some other nonsense</h3>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <!-- email section -->
-    <h2>Enter your phone number for weekly tips and information</h2>
-    <div>
-        <form action="#" class="number">
-            <label for="username"> </label>
-            <input type="tel" id="username" name="username" class="username"><br>
-            <input type="submit" value="Submit" class="submit">
-        </form>
-    </div>
-
     <!-- footer section -->
-    <!-- footer -->
     <div class="footer_container">
         <div class="footer_links">
             <div class="footer_link_wrapper">
@@ -103,31 +104,23 @@
                     <a href="/sign_up">website</a>
                     <a href="/sign_up">website</a>
                 </div>
-            
-            
                 <div class="footer_link_items">
                     <h2>Support</h2>
-                    <a onClick="document.getElementById('about').scrollIntoView();">About</a>
                     <a href="/sign_up">Getting started</a>
-                    <a href="mailto: abc@example.com">Help center</a>
-                    <a href="mailto: abc@example.com">Report a bug</a>
-                    <a href="mailto: abc@example.com">Chat support</a>
+                    <a href="/sign_up">Help center</a>
+                    <a href="/sign_up">Report a bug</a>
+                    <a href="/sign_up">Chat support</a>
                 </div>
                 <div class="footer_link_items">
                     <h2>Contact Us</h2>
-                    <a href = "mailto: abc@example.com">email@email.com</a>
-                    <a href="tel:07519369910">07689456376</a>
+                    <a href="/sign_up">email@email.com</a>
+                    <a href="/sign_up">07689456376</a>
                     <a href="/sign_up">Australia</a>
                     <a href="/sign_up">terms of service</a>
                 </div>
-            </div>
-            
+            </div> 
         </div>
-
         <p class="website_rights">C color 2022. All rights reserved</p>
-
-
-
     <script src="home.js"></script>
 </body>
 </html>
