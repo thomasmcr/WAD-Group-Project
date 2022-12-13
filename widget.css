@@ -51,11 +51,15 @@ body{
     background: linear-gradient(-30deg, #EFEFEF, #BBBBBB);
 }
 
- /* This css will be applied when we're on a mobile device*/
-@media screen and (max-width: 540px) {
-    #widget-wrapper{
-        top: 0px;
+ 
+/* Transitions widgets to align vertically for mobile devices */
+@media screen and (max-width: 1070px) {
+    .widget-wrapper{
+        flex-flow: column;
+        align-items: middle;
+    }
+
+    .widget-box{
+        width: auto;
     }
  }
- 
-

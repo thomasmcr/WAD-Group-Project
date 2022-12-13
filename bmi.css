@@ -5,15 +5,4 @@ body{
     font-size: 30px;
     color: black;
 }
-
-/* Footer transitions to 1 column */
-/*Sort of a hacky fix, moves the boxes down 100px when pushed up by the dynamic footer*/
-@media screen and (max-width:550px){
-    #content{
-        position: relative;
-        top: 100px;
-    }
-}
-
-    
     
