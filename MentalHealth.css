@@ -23,7 +23,7 @@ body{
 
 /*Slider*/
 
-.ttxt{
+/*.ttxt{
     text-align: center;
     background-color: red;
     padding-top: 50px;
@@ -94,7 +94,7 @@ body{
     opacity: 1;
     cursor: pointer;
 }
-
+*/ 
 
 /*Blog*/  
 #blog{
@@ -203,4 +203,42 @@ body{
         font-size: 20px;
     }
     
+}
+/*Charitys*/
+
+*, ::before, ::after:not(.navbar *) {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+    /* gap: 2vmin; */
+    margin-top: 300px;
+}
+
+.gallery::after {
+    content:'';
+    display:block;
+    flex-grow: 10;
+}
+
+.gallery li {
+    list-style-type: none;
+    height: 250px;
+    flex-grow: 1;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
