@@ -15,20 +15,21 @@ body{
 #content .widget-wrapper{
     background-image: none;
     border: none;
-    box-shadow: none;
+    box-shadow: none; 
 }
 
 /* Rounds each content box, seperates them with a margin and aligns text to the center */
 #content .widget-wrapper .widget-box{
-    text-align: center;
-    list-style-position: inside;
     margin: 10px;
     border-radius: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Adds space between each list element */
-#content .widget-wrapper .widget-box ul li{
-    padding-top: 30px;
+#content .widget-wrapper .widget-box p{
+    margin-top: 40px;
 }
 
 /* Title section */
@@ -43,5 +44,5 @@ body{
 }
 
 .col img{
-    margin-right: 11cm;
+    margin-top: 150px;
 }

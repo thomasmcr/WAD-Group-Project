@@ -51,7 +51,6 @@ body{
     background: linear-gradient(-30deg, #EFEFEF, #BBBBBB);
 }
 
- 
 /* Transitions widgets to align vertically for mobile devices */
 @media screen and (max-width: 1070px) {
     .widget-wrapper{
