@@ -1,10 +1,7 @@
-:root:not(.navbar *){
-  --font-size: 22px;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 body:not(.navbar *){
-  font-family: 'Inter'; 
-  font-size: var(--font-size);
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
   font-weight: bold;
   margin: 0;
   padding: 140px 0;
