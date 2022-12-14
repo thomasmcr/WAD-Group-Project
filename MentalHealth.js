@@ -1,7 +1,7 @@
 const nextE1 = document.querySelector(".next")
 const prevE1 = document.querySelector(".prev")
 
-let timeout ;
+let timeout;
 
 
 
