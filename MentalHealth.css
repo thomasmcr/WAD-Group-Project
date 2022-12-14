@@ -3,92 +3,22 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Inter';
+}
+
 .col{
     width: 90%;
-    color: black;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 30px;
 }
 
 .col img{
-    margin-right: 11cm;
-}
-
-/*Slider*/
-
-.ttxt{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding-top: 50px;
-}
-
-.holder{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 1000px;
-    padding-top: 140px;
-    margin-top: 100px;
-}
-
-.slider-Container{
-
-    position: relative;
-    width: 70vw;
-    height: 35vw;
-    max-height: 1000px;
-    
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-
-.slider-Container img{
-    width: 70vw;
-    height: 35vw;
-    max-height: 1000px;
-}
-
-.image-Container{
-    display: flex;
-    transform: translateX(0px);
-    transition: transform 0.4s ease-in-out;
-    max-height: 1000px;
-}
-
-
-.btn{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    opacity: 50%;
-    text-decoration: none;
-    transform: scale(1, 2);
-
-}
-
-
-
-.btn.prev{
-    left: 10px;
-    transform: scale(-1, 2);
-}
-
-.btn.next{
-    right: 10px;
-}
-
-
-.btn:hover{
-    opacity: 1;
-    cursor: pointer;
+    margin-right: 13cm;
 }
 
 
@@ -183,6 +113,118 @@
 
 @media(max-width:1250px){
     .blog-container{
-        width: 300px;
+        width: 700px;
+        margin-right: 2cm;
     }
+
+    #blog{
+        width: 800px;
+    }
+
+    .heading-blog{
+        margin-right: 2cm;
+    }
+
+    .col{
+        font-size: 20px;
+        margin-left: 5.5cm;
+    }
+
+    .col img{
+        margin-right: 15cm;
+    }
+}
+
+/*Charitys*/
+
+*, ::before, ::after:not(.navbar *) {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+    /* gap: 2vmin; */
+    margin-top: 300px;
+}
+
+.gallery::after {
+    content:'';
+    display:block;
+    flex-grow: 10;
+}
+
+.gallery li {
+    list-style-type: none;
+    height: 250px;
+    flex-grow: 1;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+} 
+
+@media (max-width:600px){
+    .gallery{
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3cm;
+        margin-top: 7cm;
+        width: 500px;
+    }
+
+
+    .gallery img{
+        width: 95%;
+        padding: 0.2rem;
+    }
+}
+
+/* Text overlay */
+.container {
+    position: relative;
+    width: 100%;
+}
+  
+  
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+  
+/*Makes the box appear from the center and increase in scale */
+.container:hover .overlay {
+    transform: scale(1);
+}
+  
+/*Center the text in the description box */
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-overflow: ellipsis;
 }

@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 0px;
+}
+
+>>>>>>> 323b65ad21b663134f33c955a227b49cf4abf5d1
 /* Navbar */
 .navbar{
     display: flex;
@@ -11,6 +21,12 @@
     z-index: 999999;
     padding-left: 30px;
     font-size: 25px;
+    /* Prevents users from being able to highlight navbar text*/
+    user-select: none; 
+}
+/* Prevents ghost image appearing if user clicks and drags */ 
+.navbar img{
+    -webkit-user-drag: none;
 }
 
 .navbar ul{
@@ -28,7 +44,6 @@
     padding: 2px;
     margin: 0 10px;
     color: black;
-    font-family: 'Inter'; 
 }
 
 .navbar ul li a:hover{
@@ -66,12 +81,10 @@ label{
     
 .mobile-navbar ul li{
     padding: 10px;
-    background: aliceblue;
 }
 
 .mobile-navbar ul li a{
     color: black;
-    font-family: 'Inter';
     font-weight: bold;
 }
 
@@ -105,14 +118,13 @@ input[type="checkbox"]:checked ~ ul{
     transform: scaleY(1); 
 }
 
-  
-/* This css will be applied when we're on a mobile device*/
-@media screen and (max-width: 1000px) {
+/* Enables the mobile navbar when the screen is less than 900px */
+@media screen and (max-width: 1070px) {
    .navbar{
         display: none;
    }
 
    .mobile-navbar{
-        display: flex;
+        display: inline-block;
     }
 }

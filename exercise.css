@@ -1,54 +1,35 @@
-
-*:not(.navbar *){
-    margin: 0;
-    padding: 0;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 body{
-    background-color: rgb(237, 255, 251);
-    font-family: 'Inter'; 
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
-}
-
-/* footer section */
-.footer_container{
-    background-color: rgb(202, 255, 244);
-}
-.footer_link_wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 20px;
-}
-
-.footer_link_items{
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.footer_link_items a{
-    text-decoration: none;
-    padding: 5px;
-}
-
-.imagelogo{
-    height: 12vw;
-    mix-blend-mode: multiply;
-}
-
-.footer_link_items a:hover{
-    color: rgb(192, 0, 0);
-    scale: 1.1;
-    position: relative;
-    bottom: 1.5px;
-    transition: all 0.3s;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Content section */
+/* Moves page content down by 200px to give space to the navbar */
 #content{
-    margin-top: 250px;
+    margin-top: 200px;
+}
+
+/* Removes the styling of the widget wrapper and makes it invisible */
+#content .widget-wrapper{
+    background-image: none;
+    border: none;
+    box-shadow: none; 
+}
+
+/* Rounds each content box, seperates them with a margin and aligns text to the center */
+#content .widget-wrapper .widget-box{
+    margin: 10px;
+    border-radius: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adds space between each list element */
+#content .widget-wrapper .widget-box p{
+    margin-top: 40px;
 }
 
 /* Title section */
@@ -63,5 +44,5 @@ body{
 }
 
 .col img{
-    margin-right: 11cm;
+    margin-top: 150px;
 }
