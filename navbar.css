@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 323b65ad21b663134f33c955a227b49cf4abf5d1
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 body{
     font-family: 'Poppins', sans-serif;
     color: black;
     margin: 0px;
 }
-
-<<<<<<< HEAD
->>>>>>> 323b65ad21b663134f33c955a227b49cf4abf5d1
-=======
->>>>>>> 323b65ad21b663134f33c955a227b49cf4abf5d1
 /* Navbar */
 .navbar{
     display: flex;
