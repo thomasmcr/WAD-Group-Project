@@ -10,7 +10,7 @@ body{
 .col{
     width: 90%;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -18,21 +18,9 @@ body{
 }
 
 .col img{
-    margin-right: 9cm;
+    margin-right: 13cm;
 }
 
-/*mobile title*/
-@media screen {
-    .col{
-        width: 90%;
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 30px;
-    }
-}
 
 /*Blog*/  
 #blog{
@@ -125,7 +113,17 @@ body{
 
 @media(max-width:1250px){
     .blog-container{
-        width: 300px;
+        width: 700px;
+    }
+
+    #blog{
+        width: 800px;
+    }
+
+    .gallery{
+        width: 1200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
 
