@@ -114,21 +114,20 @@ body{
 @media(max-width:1250px){
     .blog-container{
         width: 700px;
+        margin-right: 2cm;
     }
 
     #blog{
         width: 800px;
     }
 
-    .gallery{
-        width: 1200px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    .heading-blog{
+        margin-right: 2cm;
     }
 
     .col{
         font-size: 20px;
-        margin-left: 7cm;
+        margin-left: 5.5cm;
     }
 
     .col img{
@@ -173,6 +172,23 @@ body{
     width: 300px;
     height: 300px;
     object-fit: cover;
+} 
+
+@media (max-width:600px){
+    .gallery{
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3cm;
+        margin-top: 7cm;
+        width: 500px;
+    }
+
+
+    .gallery img{
+        width: 95%;
+        padding: 0.2rem;
+    }
 }
 
 /* Text overlay */
