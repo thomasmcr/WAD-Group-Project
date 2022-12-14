@@ -125,6 +125,15 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
+    .col{
+        font-size: 20px;
+        margin-left: 7cm;
+    }
+
+    .col img{
+        margin-right: 15cm;
+    }
 }
 
 /*Charitys*/
