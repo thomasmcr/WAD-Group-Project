@@ -3,6 +3,7 @@
     background-color: rgb(202, 255, 244);
     overflow: hidden;
     margin-top: 200px;
+    font-size: 20px;
 }
 
 .footer_link_wrapper{
@@ -30,7 +31,7 @@
     
 .footer_link_items a:hover{
     color: rgb(192, 0, 0);
-    scale: 1.1;
+    scale: 1.03;
     position: relative;
     bottom: 1.5px;
     transition: all 0.3s;
