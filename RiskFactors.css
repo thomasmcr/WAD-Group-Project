@@ -65,7 +65,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 4vw;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
 
 }
@@ -119,6 +119,7 @@ h1{
     outline: 2px solid rgb(145, 145, 145);
     outline-style: dashed;
     outline-offset: -8px;
+    
 }
 
 .right_text h2{
