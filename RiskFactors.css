@@ -55,6 +55,13 @@ body{
 .warninglogo{
     padding-bottom: 20px;
 }
+
+@media(max-width:1250px){
+    .rftitle{
+        margin-left: 1cm;
+        align-items: center;
+    }
+}
     
 
 h1{  
