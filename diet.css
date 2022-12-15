@@ -92,23 +92,27 @@ body:not(.navbar *){
   }
   
   .textbox {
-    width: 30%;
+    width: 65%;
     display: inline-block;
     margin: 0 5px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(3, 86, 60);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 30px;
     border: 2px solid black;
-    font-weight: 500;
+    font-weight: bold;
     
   }
   
 
-
-
-
-
-
+@media screen and (max-width: 400px) {
+   #textbox { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;    
+  }
+}
 
 
 /* footer section */
